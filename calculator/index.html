@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1623c8ce0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="calulator-container">
+        <input type="text" name="cal-screen" id="cal-screen" readonly>
+        <div class="buttons">
+            <button id="addNumber" onclick="clearScreen(' ')" class="clear-button" >C</button>
+            <button id="addNumber"  onclick="addPercent('%')" class="blue-text-color" >%</button>
+            <button id="addNumber"  onclick="deleteLeft(' ')"><i class="fa-solid fa-delete-left"></i></button>
+            <button id="addNumber" onclick="addOperator('/')" class="blue-text-color" >&divide;</button>
+            <button id="addNumber" onclick="addNumber('7')" >7</button>
+            <button id="addNumber" onclick="addNumber('8')" >8</button>
+            <button id="addNumber" onclick="addNumber('9')" >9</button>
+            <button id="addNumber" onclick="addOperator('*')" class="blue-text-color" >&times;</button>
+            
+            
+            <button id="addNumber" onclick="addNumber('4')" >4</button>
+            <button id="addNumber" onclick="addNumber('5')" >5</button>
+            <button id="addNumber" onclick="addNumber('6')" >6</button>
+            <button id="addNumber" onclick="addOperator('-')" class="blue-text-color" >&minus;</button>
+            <button id="addNumber" onclick="addNumber('1')" >1</button>
+            <button id="addNumber" onclick="addNumber('2')" >2</button>
+            <button id="addNumber" onclick="addNumber('3')" >3</button>
+            <button id="addNumber" onclick="addOperator('+')" class="blue-text-color" >&plus;</button>
+            <button id="addNumber" onclick="addNumber('00')" >00</button>
+            <button id="addNumber" onclick="addNumber('0')" >0</button>
+            <button id="addNumber" onclick="addDecimalPoint('.')">.</button>
+            <button id="addNumber" onclick="addEquals('=')"  class="blue-bg-color">&equals;</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

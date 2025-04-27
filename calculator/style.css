@@ -1,0 +1,116 @@
+:root{
+    --btn-text-color: #DEDEDE;
+    --btn-bg-color:#2d2d2d ;
+    --operators-color: #1E76FE;
+    --clear-color:#C64D38;
+    --input-bg-color: #000000;
+    --shadow1:0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+    --container-shadow: 0px 0px 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow2: 0px opx 2px 2px rgba(19, 11, 11, 0.8) ;
+    --container-bg:#272727;
+
+}
+
+body{
+    background-color:var(--btn-text-color) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calulator-container{
+    width: 380px;
+    height: 100vh;
+    max-height: fit-content;
+    margin: 45px auto;
+    background-color: var(--container-bg);
+    padding: 3cqmin 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow:var(--container-shadow);
+
+    
+}
+
+input{
+    outline: 0;
+    border:0 ;
+    height: 80px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 50px 5px;
+    text-align: right;
+    border-radius: 8px;
+    /* color:#010101; */
+
+    background-color:var(--input-bg-color);
+    color: var(--btn-text-color);
+    font-size: 2em;
+    font-weight: 550;
+    border: 0.5px solid var(--btn-bg-color);
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+    /* margin: 0; */
+
+    /* width: 100px;
+    height:auto; */
+}
+
+button{
+    font-size: 1.8em;
+    font-weight: 550;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    color:var(--btn-text-color);
+    background-color:var(--btn-bg-color) ;
+    box-shadow: var(--shadow1);
+    cursor: pointer;
+    
+
+}
+button:hover, button:focus{
+    background-color: var(--btn-text-color) ;
+    color:var(--btn-bg-color);
+}
+
+.fa-solid{
+    z-index: 10;
+    color:var(--operators-color);
+        
+}
+
+.blue-text-color{
+    color:var(--operators-color);
+}
+
+.blue-text-color:hover, .blue-text-color:focus {
+    background-color:var(--operators-color);
+    color:var(--btn-text-color);
+}
+.blue-bg-color{
+    background-color: var(--operators-color);
+    font-size: 18px;
+}
+.blue-bg-color:hover, .blue-bg-color:focus {
+    color: var(--operators-color);
+    background-color: var(--btn-text-color);
+}
+
+.clear-button{
+    color: var(--clear-color);
+}
+
+.clear-button:focus{
+    background-color: var(--clear-color);
+    color: var(--btn-text-color);
+}
+
